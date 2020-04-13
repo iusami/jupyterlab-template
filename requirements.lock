@@ -1,0 +1,13 @@
+black==19.10b0
+ipywidgets==7.5.1
+isort==4.3.21
+jupyterlab==2.0.0
+jupyterlab_code_formatter==1.2.3
+jupyterlab-git==0.10.0
+matplotlib==3.0.2
+numpy==1.16.4
+pandas==1.0.0
+pyparsing==2.3.0
+python-dateutil==2.7.5
+seaborn==0.10.0
+urllib3==1.25.8

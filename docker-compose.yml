@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  python:
+    build:
+      context: "./"
+      dockerfile: "Dockerfile"
+    image: ${TAG}
+    hostname: ${TAG}
+    container_name: ${TAG}
+    ports:
+      - "8888:8888"
+    volumes:
+      - ${WORKSPACE}/jupyter:/opt/python/work/jupyter
+      - ${WORKSPACE}/jupyterlab:/opt/python/work/jupyterlab
+      - ${WORKSPACE}/notebooks:/opt/python/work/notebooks
+      - ${WORKSPACE}/data:/opt/python/work/data
+      - ${WORKSPACE}/module:/opt/python/work/module
+    logging:
+      driver: "json-file"
